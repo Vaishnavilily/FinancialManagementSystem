@@ -1,0 +1,142 @@
+.recon-container {
+  padding: 32px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.recon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.recon-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 8px;
+}
+
+.recon-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 15px;
+}
+
+.recon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recon-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: white;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+  transition: box-shadow 0.2s, border-color 0.2s;
+  align-items: center;
+}
+
+.recon-card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.recon-side {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recon-side-header {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.recon-amount {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.amount-income { color: var(--color-success); }
+.amount-expense { color: var(--color-text-main); } /* Bank expenses are usually just dark or red, we'll use dark */
+
+.recon-desc {
+  font-weight: 500;
+  color: var(--color-text-main);
+  font-size: 15px;
+}
+
+.recon-date {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+/* Match side styling */
+.match-side {
+  background-color: #F8F9FA;
+  border-radius: 6px;
+  padding: 16px;
+  border: 1px dashed var(--color-border);
+}
+
+.match-side.perfect-match {
+  background-color: #F0F9E8;
+  border-color: #A3D88C;
+}
+
+.match-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--color-success);
+  color: white;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+.no-match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  color: var(--color-text-secondary);
+  text-align: center;
+  gap: 12px;
+}
+
+.match-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--color-text-secondary);
+}
+
+.btn-approve {
+  background-color: var(--color-success);
+  color: white;
+  min-width: 120px;
+}
+
+.btn-approve:hover {
+  background-color: #177332;
+}

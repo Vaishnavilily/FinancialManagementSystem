@@ -1,0 +1,47 @@
+.bills-container {
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bills-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-unpaid {
+  background-color: #FFF3E0;
+  color: #E65100;
+}
+
+.status-paid {
+  background-color: #E8F5E9;
+  color: #1B5E20;
+}
+
+.status-overdue {
+  background-color: #FFEBEE;
+  color: #B71C1C;
+}

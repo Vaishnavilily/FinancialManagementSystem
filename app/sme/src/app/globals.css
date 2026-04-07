@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --color-primary: #004C91;
+  --color-bg-sidebar: #F8F9FA;
+  --color-bg-main: #FFFFFF;
+  --color-text-main: #333333;
+  --color-text-secondary: #777777;
+  --color-border: #E8EBEF;
+  --color-hover: #E9ECEF;
+  --color-success: #1E8E3E;
+  --color-danger: #D93025;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text-main);
+  background-color: var(--color-bg-main);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Base resets & utilities */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Global utility classes for premium feel */
+.wave-btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: opacity 0.2s, background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.wave-btn-primary:hover {
+  background-color: #003B71;
+}
+
+.wave-btn-secondary {
+  background-color: white;
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.wave-btn-secondary:hover {
+  background-color: var(--color-bg-sidebar);
+}
+
+.wave-card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wave-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+}
+
+.layout-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background-color: var(--color-bg-main);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Action Buttons for CRUD */
+.action-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn:hover.edit-btn {
+  color: var(--color-primary);
+  background: var(--color-hover);
+}
+
+.action-btn:hover.delete-btn {
+  color: var(--color-danger);
+  background: #FFEBEA;
+}
+
+.actions-cell {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+

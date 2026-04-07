@@ -1,0 +1,118 @@
+.dashboard-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dashboard-header {
+  margin-bottom: 32px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.welcome-banner {
+  background-color: var(--color-bg-sidebar);
+  border-radius: 12px;
+  padding: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.welcome-banner h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--color-text-main);
+}
+
+.welcome-banner p {
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  text-align: left;
+}
+
+.action-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.action-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.action-card p {
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.card-action-btn {
+  width: 100%;
+}
+
+.dashboard-overview {
+  margin-top: 40px;
+}
+
+.overview-card {
+  min-height: 300px;
+}
+
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.overview-select {
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--color-text-main);
+  background-color: white;
+  cursor: pointer;
+}
+
+.placeholder-chart {
+  height: 200px;
+  background-color: var(--color-bg-sidebar);
+  border: 1px dashed var(--color-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-text {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
