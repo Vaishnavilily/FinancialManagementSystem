@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import connectDB from '@/lib/mongodb';
-import Transaction from '@/lib/models/Transaction';
-import User from '@/lib/models/user';
+import Transaction from '../../../../../lib/models/personal/Transaction';
+import User from '../../../../../lib/models/models/user';
 import { requireAuth } from '@/lib/jwt';
 
 export async function GET(request) {

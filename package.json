@@ -15,10 +15,19 @@
     "engines": {
         "node": ">=18.x"
     },
-  "scripts": {
-    "dev": "npx serve .",
-    "dev:sme": "cd finflow_sme && npm run dev",
-    "dev:personal": "cd personal && npm run dev",
-    "dev:all": "start cmd /k \"cd finflow_sme && npm run dev\" && start cmd /k \"cd personal && npm run dev\""
-  }
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "dev:sme": "cd finflow_sme && npm run dev",
+        "dev:personal": "cd personal && npm run dev",
+        "dev:all": "start cmd /k \"cd finflow_sme && npm run dev\" && start cmd /k \"cd personal && npm run dev\"",
+        "main": "next.config.js"
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import connectDB from '@/lib/mongodb';
-import Budget from '@/lib/models/Budget';
-import User from '@/lib/models/user';
+import Budget from '../../../../../../lib/models/personal/Budget';
+import User from '../../../../../../lib/models/models/user';
 import { requireAuth } from '@/lib/jwt';
 
 export async function DELETE(request, { params }) {

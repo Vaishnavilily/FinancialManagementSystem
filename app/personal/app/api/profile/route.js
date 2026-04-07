@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import connectDB from '@/lib/mongodb';
-import User from '@/lib/models/user';
+import User from '../../../../../lib/models/models/user';
 import { requireAuth } from '@/lib/jwt';
 
 function toNumber(value) {
